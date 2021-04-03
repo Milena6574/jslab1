@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+Задание 7
+</title>
+<script language="JavaScript">
+function array_exp(a, n, m, b){
+s = a.slice(n, m);
+document.write(b + s + "<br>");
+return s;
+} 
+</script>
+</head>
+<body>
+<script language="JavaScript"> 
+year=new Array("декабрь","январь","февраль","март","апрель","май", "июнь","июль","август","сентябрь","октябрь","ноябрь");
+summer=new Array();
+summer=year.slice(6,9);
+document.write(summer+"<br>");
+a=new Array("философия", "руский язык", "матемематический анализ", "аналитическая геометрия", "программирование", "математическая экономика");
+document.write("Все предметы: " + a + "<br>");
+document.write("<br>");
+b = array_exp(a, 2, 6, "Точные предметы: ");
+document.write("<br>");
+c = array_exp(a, 0, 2, "Гуманитарные предметы: ");
+</script>
+</body>
+</html>
